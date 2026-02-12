@@ -1,0 +1,15 @@
+class Solution(object):
+    def selfDividingNumbers(self, left, right):
+        result = []
+        for number in range(left, right + 1):
+            is_self_dividing = True
+            for digit in str(number):
+                if int(digit) == 0 or number % int(digit) != 0:
+                    is_self_dividing = False
+            if is_self_dividing:
+                result.append(number)
+        return result
+
+            
+
+        
