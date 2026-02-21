@@ -1,0 +1,7 @@
+class Solution(object):
+    def missingNumber(self, nums):
+        n = len(nums)
+        expected_total = sum(range(0, n + 1))
+        actual_total = sum(nums)
+        difference_number = expected_total - actual_total
+        return difference_number
