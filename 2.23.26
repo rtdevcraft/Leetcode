@@ -1,0 +1,10 @@
+class Solution(object):
+    def plusOne(self, digits):
+        string_digits = "".join(str(d) for d in digits)
+        digit_num = int(string_digits)
+        digit_num_plus_one = digit_num + 1
+        new_digit_num_str = str(digit_num_plus_one)
+        arr = [] 
+        for char in new_digit_num_str:
+            arr.append(int(char))
+        return arr
